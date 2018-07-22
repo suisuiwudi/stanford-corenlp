@@ -221,6 +221,10 @@ class StanfordCoreNLP:
             corefs.append(simplified_mentions)
         return corefs
 
+    def relation(self, text):
+        r_dict = self._request('relation', text)
+        return r_dict
+
     def switch_language(self, language="en"):
         self._check_language(language)
         self.lang = language
