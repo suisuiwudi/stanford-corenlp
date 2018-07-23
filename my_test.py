@@ -65,9 +65,9 @@ def read_conll_ner(input_path):
     return output_docs
 
 
-nlp = StanfordCoreNLP('../NLP/stanford-corenlp-full-2018-02-27') 
+nlp = StanfordCoreNLP('../stanford-corenlp-full-2018-02-27') 
 
-test_data = read_conll_ner('../NLP/Chapter-5-NER/CoNLL - 2003/en/test.txt')
+test_data = read_conll_ner('../Chapter-5-NER/CoNLL - 2003/en/test.txt')
 
 print(test_data[0]['paragraphs'][0]['sentences'][1])
 
